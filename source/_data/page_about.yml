@@ -31,11 +31,23 @@ team:
       name: "Giulia Tosato"
       role: "Event Manager"
       pic_filename: "giulia.jpg"
+    member_3:
+      name: "Michela Bertaina"
+      role: "Community Manager"
+      pic_filename: "michela.jpg"
     member_4:
       name: "Giovanna Ferrari"
       role: "Sponsor manager"
       pic_filename: "giovanna.jpg"
     member_5:
-      name: "Michela Bertaina"
-      role: "Community manager"
-      pic_filename: "michela.png"
+      name: "Matteo Beccati"
+      role: "GrUSP Board Member"
+      pic_filename: "matteo.jpg"
+    member_6:
+      name: "Cesare D'Amico"
+      role: "GrUSP Board Member"
+      pic_filename: "cesare.jpg"
+    member_7:
+      name: "Daniel Londero"
+      role: "GrUSP Board Member"
+      pic_filename: "daniel.jpg"
