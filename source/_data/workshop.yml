@@ -77,7 +77,7 @@ workshops:
     requirements_description: "Potete usare il linguaggio che preferite purché abbia una libreria per RabbitMQ, esiste per qualsiasi linguaggio.
     <br><br  /> È necessario avere docker e docker-compose installato sulla propria macchina. Istruzioni più dettagliate saranno inviate qualche giorno prima del workshop."
     useful_info_title: "Informazioni utili"
-    useful_info_description: "Il workshop si svolge in presenza, a Bologna. Non è possibile partecipare da remoto. L'accesso sarà subordinato alle normative COVID-10 vigenti.
+    useful_info_description: "Il workshop si svolge in presenza, a Bologna. Non è possibile partecipare da remoto. L'accesso sarà subordinato alle normative COVID-19 vigenti.
     <br><br  /><i>ATTENZIONE: Il biglietto per il workshop è venduto separatamente da quello per la conferenza. Per partecipare a workshop + conferenza occorre acquistare due biglietti separati.</i>"
     # CTA
     cta_title: "Assicurati un posto! I biglietti sono in vendita"
