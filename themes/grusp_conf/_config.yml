@@ -16,7 +16,7 @@ menu:
 # workshops submenu (comment out if only one workshop: add items for multiple workshops)
 workshop_submenu:
   RabbitMQ: RabbitMQ
-#  workshop_2: ws
+  introduzione_kubernetes: Introduzione a Kubernetes
 
 # welcome submenu
 welcome_submenu:
