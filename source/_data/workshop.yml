@@ -170,3 +170,86 @@ workshops:
     <br><br  /><i>ATTENZIONE: Il biglietto per il workshop è venduto separatamente da quello per la conferenza. Per partecipare a workshop + conferenza occorre acquistare due biglietti separati.</i>"
     # CTA
     cta_title: "Assicurati un posto! I biglietti sono in vendita"
+
+  MLOps_Amazon_SageMaker:
+    ws_id: MLOps_Amazon_SageMaker
+    is_external: false
+    page_uri: "workshop/MLOps_Amazon_SageMaker.html"
+    page_title: "Workshop: MLOps ed Amazon SageMaker, come portare il tuo codice di Machine Learning in Cloud"
+    workshop_title: "MLOps ed Amazon SageMaker, come portare il tuo codice di Machine Learning in Cloud"
+    ticket_url: "https://containerday-2022.eventbrite.com"
+    ticket_label: "Partecipa al workshop"
+    location_title: "Dove"
+    location: "Bologna"
+    # online_location: "online"
+    location_name: "Hotel Savoia Regency"
+    # location_name: "The Internet"
+    location_contact_phone: ""
+    location_contact_email: ""
+    location_contact_url: "https://www.savoia.eu/"
+    location_address: "Via del Pilastro, 2, 40127 Bologna BO"
+    location_maps_url: "https://goo.gl/maps/KmKU5YsBGjZihnkTA"
+    location_maps_label: "Get directions"
+    location_additional_info: ""
+    # location_additional_info: "add info 2"
+    whatandwhen_title: "Quando"
+    whatandwhen_additional_info: "Giovedì 27 Ottobre 2022, dalle 9:30 alle 18. Sono inclusi coffee break e pranzo."
+    # whatandwhen_additional_info: "Giovedì 17 Marzo 2022, dalle 9 alle 18"
+    date: 2022-10-27T09:30+02:00
+    end_date: 2022-10-27T17:30+02:00
+    date_text: ""
+    language_title: "Lingua"
+    language: "italiano"
+    # language_ext: "Lingua: italiano"
+    language_additional_info: ""
+    collab: "Workshop realizzato in collaborazione con XPeppers"
+    # description: "<i>sottotitolo o altra riga di descrizione sintetica</i>"
+    description_long:     "Il workshop è rivolto a data scientist e machine learning engineer che vogliono approfondire il funzionamento di Amazon SageMaker ed i principi MLOps.
+    <br><br  />
+    Si parte facendo una introduzione ad <b>Amazon SageMaker, alle componenti e funzionalità utili per l'implementazione della Pipeline di Machine Learning.</b>
+    Successivamente ipotizzeremo uno scenario, hai sviluppato la tua soluzione di Machine Learning utilizzando i Jupyter Notebook e vuoi portarla in Cloud, ci concentreremo quindi sul <b>refactoring del codice e sul rilascio dei Container in Amazon ECR.</b>
+    Infine useremo Amazon SageMaker per eseguire la build, train e deploy del tuo modello."
+
+    # video trailer?
+    trailer: false
+    trailer_url: ""
+    # nota sul titolo: se il linguaggio specificato in `language` NON in clude 'italian', in pagina viene aggiunta la "s" finale
+    teacher_title: "Docente"
+    teachers:
+      teacher_1:
+        teacher_name: "Gianluigi Mucciolo"
+        teacher_bio: "Lavora come consulente in XPeppers (una società di Claranet), dove aiuta i clienti internazionali nella costruzione di architetture cloud-native per l'elaborazione dei dati. Ha esperienza nell'utilizzo delle metodologie Agile e DevOps, è un AWS Authorized Instructor, un AWS Community Builder e lavora con il Cloud AWS in ambito Machine Learning e Big Data. Inoltre, ama avere conversazioni significative, leggere e passeggiare immerso nella natura."
+        pic_filename: gianluigi-mucciolo.png
+        teacher_role: "Consulente"
+        teacher_org: "XPeppers"
+    topics_title: "Programma"
+    topics:
+      - "Architettura di Amazon SageMaker"
+      - "Featrues principali"
+      - "Machine Learning Pipeline"
+      - "Refactoring Jupyter Notebook"
+      - "Creazione container di Preprocess"
+      - "Creazione container di Train/Inference"
+      - "Deploy su SageMaker Endpoints"
+    addressees_title: "Cosa ottieni frequentando il workshop"
+    addressees_description: "Grazie a questo workshop:
+    <ul>
+    <li>Imparerai ad applicare i principi base del DevOps al Machine Learning;</li>
+    <li>Imparerai ad utilizzzare Amazon SageMaker e le funzionalità principali;</li>
+    <li>Imparerai ad effettuare il refactoring di Jupyter Notebook;</li>
+    <li>Diventerai abile nel portare il tuo codice di Machine Learning in Cloud.</li>
+    </ul><br>"
+    requirements_title: "Requisiti di partecipazione"
+    requirements_description: "Il workshop è di livello introduttivo ed è rivolto a data scientist e machine learning engineer.
+    <br><br  /> Sono richieste:
+    <ul>
+    <li>Familiarità con la Console AWS;</li>
+    <li>Conoscenza di base di Python;</li>
+    <li>Conoscenza di base di Machine Learning;</li>
+    <li>Conoscenza base di Docker.</li>
+    </ul>"
+    useful_info_title: "Informazioni utili"
+    useful_info_description: "Il workshop si svolge in presenza, a Bologna. Non è possibile partecipare da remoto. L'accesso sarà subordinato alle normative COVID-19 vigenti.
+    <br><br  /><i>ATTENZIONE: Il biglietto per il workshop è venduto separatamente da quello per la conferenza. Per partecipare a workshop + conferenza occorre acquistare due biglietti separati.</i>"
+    # CTA
+    cta_title: "Assicurati un posto! I biglietti sono in vendita"

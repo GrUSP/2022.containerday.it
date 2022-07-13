@@ -17,6 +17,7 @@ menu:
 workshop_submenu:
   RabbitMQ: RabbitMQ
   introduzione_kubernetes: Introduzione a Kubernetes
+  MLOps_Amazon_SageMaker: MLOps ed Amazon SageMaker
 
 # welcome submenu
 welcome_submenu:
