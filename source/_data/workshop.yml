@@ -53,7 +53,7 @@ workshops:
         teacher_name: "Gianluca Padovani"
         teacher_bio: "Sviluppo dai lontani anni '90. Ho lavorato in diversi ambienti e industrie (embedded, industriale, entertainment) sviluppando software di diverso tipo ma occupandomi in particolare di applicativi che comunicano tra di loro in diverse forme (c'è chi li chiamerebbe distribuiti ...).
         <br> Sono appassionato di TDD, Extreme programming, Craftsmanship e tutto ciò che è 'buona programmazione'. Sono appassionato di programmi funzionali, in particolare di Elixir ed Erlang che utilizzo da ormai svariati anni. Ho sviluppato in molti altri linguaggi partendo dal C++, passando per C#, Ruby Javscript/Typescript e non disdegno impararne sempre di nuovi :-)
-        <br> Sono Founder e CTO di Coders51 azienda di consulenza specializzata nello sviluppo di applicazioni scalabili e foult tollerant.
+        <br> Sono Founder e CTO di Coders51 azienda di consulenza specializzata nello sviluppo di applicazioni scalabili e fault tolerant.
         Coautore di <a href='https://leanpub.com/cronache-di-domain-driven-design'>'Cronache di Domain-Driven Design'.</a>"
         pic_filename: "gianluca-padovani.jpg"
         teacher_role: "Founder e CTO"
