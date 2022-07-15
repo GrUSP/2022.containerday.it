@@ -218,10 +218,10 @@ workshops:
     teachers:
       teacher_1:
         teacher_name: "Gianluigi Mucciolo"
-        teacher_bio: "Lavora come consulente in XPeppers (una società di Claranet), dove aiuta i clienti internazionali nella costruzione di architetture cloud-native per l'elaborazione dei dati. Ha esperienza nell'utilizzo delle metodologie Agile e DevOps, è un AWS Authorized Instructor, un AWS Community Builder e lavora con il Cloud AWS in ambito Machine Learning e Big Data. Inoltre, ama avere conversazioni significative, leggere e passeggiare immerso nella natura."
+        teacher_bio: "Lavora come consulente in Claranet, dove aiuta i clienti internazionali nella costruzione di architetture cloud-native per l'elaborazione dei dati. Ha esperienza nell'utilizzo delle metodologie Agile e DevOps, è un AWS Authorized Instructor, un AWS Community Builder e lavora con il Cloud AWS in ambito Machine Learning e Big Data. Inoltre, ama avere conversazioni significative, leggere e passeggiare immerso nella natura."
         pic_filename: gianluigi-mucciolo.png
-        teacher_role: "Consulente"
-        teacher_org: "XPeppers"
+        teacher_role: "Technical Principal"
+        teacher_org: "Claranet"
     topics_title: "Programma"
     topics:
       - "Architettura di Amazon SageMaker"
