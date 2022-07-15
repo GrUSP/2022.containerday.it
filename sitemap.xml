@@ -2,13 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://2022.containerday.it/welcome/about.html</loc>
-    
-    <lastmod>2022-07-15</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://2022.containerday.it/workshop/MLOps_Amazon_SageMaker.html</loc>
     
     <lastmod>2022-07-15</lastmod>
@@ -16,7 +9,14 @@
   </url>
   
   <url>
-    <loc>https://2022.containerday.it/schedule/index.html</loc>
+    <loc>https://2022.containerday.it/workshop/introduzione_kubernetes.html</loc>
+    
+    <lastmod>2022-07-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://2022.containerday.it/workshop/RabbitMQ.html</loc>
     
     <lastmod>2022-07-15</lastmod>
     
@@ -51,7 +51,7 @@
   </url>
   
   <url>
-    <loc>https://2022.containerday.it/workshop/introduzione_kubernetes.html</loc>
+    <loc>https://2022.containerday.it/welcome/about.html</loc>
     
     <lastmod>2022-07-15</lastmod>
     
@@ -86,7 +86,7 @@
   </url>
   
   <url>
-    <loc>https://2022.containerday.it/workshop/RabbitMQ.html</loc>
+    <loc>https://2022.containerday.it/schedule/index.html</loc>
     
     <lastmod>2022-07-15</lastmod>
     
