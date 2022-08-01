@@ -15,6 +15,14 @@ speaker_1: &speaker
   speaker_twitter_url: ""
   is_mc: false
 
+speaker_9: &fabiomora
+  speaker_in_speaker_lists: true
+  speaker_name: Fabio Mora
+  speaker_pic_filename: fabio-mora.png
+  speaker_role: "MASTER OF CEREMONIES - Software Engineer, DevOps consultant, Author"
+  speaker_bio: ""
+  is_mc: true
+
 speakers:
   speaker_1: *speaker
 
