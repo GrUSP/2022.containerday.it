@@ -91,10 +91,10 @@ conference:
   newsletter_legal_url: "https://mailchimp.com/legal/"
   newsletter_legal_label: "Informazioni riguardo la privacy policy di Mailchimp"
   # "speakers" component. set the first parameter to true to make it appear in home page, false means hidden
-  speakers_visible: false
+  speakers_visible: true
   speakers_title: "speaker"
   mcs_title: "MC"
-  speaker_count_text:
+  speaker_count_text: Speaker della conferenza (in aggiornamento!)
   # "topics" component. set the first parameter to true to make it appear in home page, false means hidden
   topics_visible: true
   topics_title: "Argomenti e temi"

@@ -1,21 +1,107 @@
 # NB impostare a `true` per generare la pagina, a `false` per NON generarla
-generate_schedule_page: true
+generate_schedule_page: false
 schedule_under_construction_title: "Schedule under construction"
 schedule_under_construction_description: "We are still defining the schedule. Please be patient"
 social_lineup_image: "social-lineup-1200x630.png"
 
 # Speakers. I mixin "&nome" servono per indicare quali speaker partecipano a ogni talk, sotto
-speaker_1: &speaker
-  speaker_in_speaker_lists: false
-  speaker_name:
-  speaker_pic_filename: .jpg
-  speaker_role: ""
-  speaker_bio: ""
-  speaker_github_url: ""
-  speaker_twitter_url: ""
+speaker_1: &jose
+  speaker_in_speaker_lists: true
+  speaker_name: Jose Blanquicet
+  speaker_pic_filename: jose-blanquicet.png
+  speaker_role: "Senior Software Engineer @ Microsoft"
+  speaker_bio: "Jose è un Senior Software Engineer focalizzato sulle tecnologie di Kubernetes ed eBPF. Attualmente lavora come maintainer e sviluppatore di Inspektor Gadget, un progetto open source del team Kinvolk @ Microsoft."
+  speaker_github_url: "https://github.com/blanquicet"
+  speaker_twitter_url: "https://twitter.com/jose_blanquicet"
   is_mc: false
-
-speaker_9: &fabiomora
+speaker_2: &marco
+  speaker_in_speaker_lists: true
+  speaker_name: Marco De Pascale
+  speaker_pic_filename: marco-depascale.png
+  speaker_role: "HPC Specialist @ CINECA"
+  speaker_bio: "I own a PhD in Astronomy and 10 years experience as C++ software engineer ranging from data science and machine learning, acquired during PhD, to control software development and design for multimillion Euro instruments, gained during Post Doc contracts, and to high performance computing (HPC) applications, acquired at the Italian HPC center CINECA. Since the last year I am responsible on the software side of the continuous integration infrastructure on CINECA GitLab instance."
+  is_mc: false
+speaker_3: &jason
+  speaker_in_speaker_lists: true
+  speaker_name: Jason	Dellaluce
+  speaker_pic_filename: jason-dellaluce.png
+  speaker_role: "Open Source Engineer @ Sysdig"
+  speaker_bio: "Jason Dellaluce è attualmente Open Source Engineer a Sysdig e Core Maintainer di Falco, il tool per la Cloud Native Runtime Security incubato da CNCF. Contribuisce regolarmente alla community di Falco ed è esposto a Linux, Kubernetes, Container, Sicurezza, eBPF, e al mondo dell'Open Source in generale. Recentemente, ha contribuito a Falco assumendo un ruolo chiave nello sviluppo del nuovo Plugin System, supportando le ultime version release, e guidando diverse iniziative di rinnovamento ed ottimizzazione. Precedentemente, Jason ha conseguito un MSc in Computer Engineering studiando a Università di Bologna e a University of California, Irvine."
+  speaker_github_url: "https://github.com/jasondellaluce"
+  speaker_twitter_url: "https://twitter.com/jasondellaluce"
+  is_mc: false
+speaker_4: &giorgia
+  speaker_in_speaker_lists: true
+  speaker_name: Giorgia	Fiscaletti
+  speaker_pic_filename: giorgia-fiscaletti.png
+  speaker_role: "Cloud Engineer Specialist @ Mia-Platform"
+  speaker_bio: "Ingegnera informatica, attualmente Cloud Engineer presso Mia-Platform. Appassionata di arte e tecnologia con uno spiccato interesse verso il mondo cloud e DevOps, costantemente alla ricerca di modi creativi e fuori dagli schemi per affrontare il problem-solving quotidiano.
+(Anche se la miglior soluzione resta spegnere e riaccendere.)"
+  speaker_github_url: "https://github.com/fiscafusca"
+  is_mc: false
+speaker_5: &jacopo
+  speaker_in_speaker_lists: true
+  speaker_name: Jacopo Nardiello
+  speaker_pic_filename: jacopo-nardiello.png
+  speaker_role: "Founder & CEO @ SIGHUP"
+  speaker_bio: "Jacopo Nardiello è un DevOps Engineer appassionato di automazione delle infrastrutture, orchestrazione e sistemi distribuiti.
+  Focalizzato sull’architettura e l’ingegneria di sistemi distribuiti basati su Containers e Kubernetes, nel 2016 ha fondato SIGHUP.
+  Jacopo è anche CNCF Ambassador e Core Organizer della community milanese Kubernetes e Cloud-Native Milano Meetup."
+  is_mc: false
+speaker_6: &massimo
+  speaker_in_speaker_lists: true
+  speaker_name: Massimo Re Ferre'
+  speaker_pic_filename: massimo-referre.png
+  speaker_role: "Senior Principal Technologist @ AWS"
+  speaker_bio: "Massimo è un Senior Principal Technologist nel service team AWS che si occupa di tecnologie container e serverless. Per circa 25 anni si è specializzato in sistemi distribuiti partendo con i sistemi operativi, passando per le soluzioni di virtualizzazione per arrivare alle architetture cloud. Ha lavorato su tecnologie container dal 2014 e ha successivamente esteso le sue competenze alle tecnologie serverless. Massimo ha <a href='https://it20.info'>un blog in cui condivide le sue esperienze</a> e il suo account Twitter è @mreferre"
+  speaker_github_url: "https://github.com/mreferre"
+  is_mc: false
+speaker_7: &gabriele
+  speaker_in_speaker_lists: true
+  speaker_name: Gabriele Santomaggio
+  speaker_pic_filename: gabriele-santomaggio.png
+  speaker_role: "Senior Member of Technical Staff @ Vmware"
+  speaker_bio: "Developer, speaker, 99.9% open-source code. RabbitMQ team."
+  speaker_github_url: "https://github.com/gsantomaggio"
+  speaker_twitter_url: "https://twitter.com/gsantomaggio"
+  is_mc: false
+speaker_8: &serena
+  speaker_in_speaker_lists: true
+  speaker_name: Serena Sensini
+  speaker_pic_filename: serena-sensini.png
+  speaker_role: "Enterprise Architect @ Dedalus"
+  speaker_bio: "Serena Sensini è un'ingegnera e programmatrice con esperienza nella progettazione e nello sviluppo di soluzioni web e stand-alone from scratch. Appassionata di AI, Deep Learning e Data Analysis, e di linguaggi come Python, lavora come Enterprise Architect presso Dedalus e collabora con diverse associazioni no profit con cui tiene corsi e seminari. Nel 2021 ha aperto il suo primo blog, TheRedCode.it, dove racconta del mondo della tecnologia attraverso guide, interviste a diversi professionisti e professioniste del settore e dove pubblica recensioni di manuali tecnici."
+  speaker_github_url: "https://github.com/serenasensini"
+  speaker_twitter_url: "https://twitter.com/s_sensini"
+  is_mc: false
+# speaker_9: &michele
+#   speaker_in_speaker_lists: true
+#   speaker_name: Michele Zuccala
+#   speaker_pic_filename: michele-zuccala.png
+#   speaker_role: "Director of Open Source Engineering @ Sysdig"
+#   speaker_bio: "Michele si è unito a Sysdig ad aprile 2021 e da allora è a guida del team di Open Source Engineering. Il punto focale del suo team è Falco, il de facto standard per cloud-native runtime security, attualmente incubato da CNCF. Prima di entrare in Sysdig, Michele è stato CTO in ProntoPro, una scale-up italiana di rilievo. Lo appassiona profondamente contribuire alla comunità tecnologica globale fornendo consulenze e investendo in early-stage startups, oltre a dare un contributo significativo a progetti open source. Nel tempo libero Michele ama navigare, fare immersione subacquea, e sciare."
+#   speaker_github_url: "https://github.com/"
+#   speaker_twitter_url: "https://twitter.com/"
+#   is_mc: false
+# speaker_: &nome
+#   speaker_in_speaker_lists: true
+#   speaker_name:
+#   speaker_pic_filename: .jpg
+#   speaker_role: ""
+#   speaker_bio: ""
+#   speaker_github_url: "https://github.com/"
+#   speaker_twitter_url: "https://twitter.com/"
+#   is_mc: false
+# speaker_: &nome
+#   speaker_in_speaker_lists: true
+#   speaker_name:
+#   speaker_pic_filename: .jpg
+#   speaker_role: ""
+#   speaker_bio: ""
+#   speaker_github_url: "https://github.com/"
+#   speaker_twitter_url: "https://twitter.com/"
+#   is_mc: false
+speaker_11: &fabiomora
   speaker_in_speaker_lists: true
   speaker_name: Fabio Mora
   speaker_pic_filename: fabio-mora.png
@@ -24,7 +110,16 @@ speaker_9: &fabiomora
   is_mc: true
 
 speakers:
-  speaker_1: *speaker
+  speaker_1: *jose
+  speaker_2: *marco
+  speaker_3: *jason
+  speaker_4: *giorgia
+  speaker_5: *jacopo
+  speaker_6: *massimo
+  speaker_7: *gabriele
+  speaker_8: *serena
+#  speaker_9: *michele
+  speaker_11: *fabiomora
 
 tracks:
   track_1: &track_1
@@ -46,63 +141,158 @@ tracks:
 # NB tutti i "talk" devono avere una track. I "service" e i "keynote" dovrebbero avere track_1
 days:
   day_1:
-    date: 2022-05-19T09:15+02:00
+    date: 2022-10-28T09:15+02:00
     title: "Day 1"
     talks:
       # service
       checkin:
         item_type: "service"
-        start_datetime: 2022-05-19T08:30+02:00
-        end_datetime: 2022-05-19T09:15+02:00
+        start_datetime: 2022-10-28T09:15+02:00
+        end_datetime: 2022-10-28T09:15+02:00
         talk_title: "Check-in and Welcome Coffee"
       opening:
         item_type: "service"
-        start_datetime: 2022-05-19T09:15+02:00
-        end_datetime: 2022-05-19T09:30+02:00
+        start_datetime: 2022-10-28T09:15+02:00
+        end_datetime: 2022-10-28T09:15+02:00
         talk_title: "Opening by GrUSP"
       coffee-morning:
         item_type: "service"
-        start_datetime: 2022-05-19T11:05+02:00
-        end_datetime: 2022-05-19T11:25+02:00
+        start_datetime: 2022-10-28T09:15+02:00
+        end_datetime: 2022-10-28T09:15+02:00
         talk_title: "Coffee break"
         service_icon: "coffee"
       coffee-afternoon:
         item_type: "service"
-        start_datetime: 2022-05-19T16:20+02:00
-        end_datetime: 2022-05-19T16:50+02:00
+        start_datetime: 2022-10-28T09:15+02:00
+        end_datetime: 2022-10-28T09:15+02:00
         talk_title: "Coffee break"
         service_icon: "coffee"
       lunch:
         item_type: "service"
-        start_datetime: 2022-05-19T13:00+02:00
-        end_datetime: 2022-05-19T14:30+02:00
+        start_datetime: 2022-10-28T09:15+02:00
+        end_datetime: 2022-10-28T09:15+02:00
         talk_title: "Lunch break"
         service_icon: "cutlery"
       happy-hour:
         item_type: "service"
-        start_datetime: 2022-05-19T18:25+02:00
-        end_datetime: 2022-05-19T19:30+02:00
+        start_datetime: 2022-10-28T09:15+02:00
+        end_datetime: 2022-10-28T09:15+02:00
         talk_title: "Happy Hour"
         service_icon: "glass"
 
       # talk
-      keynote:
-        item_type: "keynote"
-        track: *track_1
-        start_datetime: 2022-05-19T09:30+02:00
-        end_datetime: 2022-05-19T10:25+02:00
-        talk_title: ""
-        talk_description: ""
-        talk_video_url:
-        speakers:
-          speaker_1: *speaker
-      titolotalk1:
+      jose:
         item_type: "talk"
         track: *track_1
-        start_datetime: 2022-05-19T10:25+02:00
-        end_datetime: 2022-05-19T11:05+02:00
-        talk_title: ""
-        talk_description: ""
+        start_datetime:
+        end_datetime:
+        talk_title: "Debugging and Observing Containers Like a Pro"
+        talk_description: "È difficile fare debugging dei container utilizzando i tool standard Linux (ad es. top, tcpdump, ss/netstat) o i tool basati su eBPF (ad es. <a href='https://github.com/kinvolk/bcc/'>BCC</a>) perché tutti loro funzionano a livello di processo e non hanno conoscenza dei namespace di Linux.
+        Per questo motivo, gli utenti si vedono obbligati a dover interpretare l'output di questi tool per correlarlo con il container che si sta debuggando e, in alcuni casi, saltare manualmente tra i namespace di Linux per eseguire i tool nel contesto corretto.
+        Questo processo è complesso e richiede una comprensione approfondita del back-end della tecnologia dei container e, in generale, dei namespace di Linux.
+        Questo è il motivo per cui abbiamo creato <a href='https://github.com/kinvolk/inspektor-gadget'>Local-Gadget</a>, un progetto open source basato su eBPF per il debugging e l'observability dei container che nasconde la complessità di basso livello agli utenti finali.
+        In questo talk, Jose dimostrerà alcune delle difficoltà di fare debugging dei container con dei tool che lavorano a livello di processo. Dopodiché, introdurrà Local-Gadget e spiegherà come sono state superate queste difficoltà per consentire agli utenti di tracciare facilmente eventi come la creazione di nuovi processi, l'accesso ai file, l'attività di rete e del disco dei container."
         talk_video_url:
         speakers:
-          speaker_1: *speaker
+          speaker_1: *jose
+      marco:
+        item_type: "talk"
+        track: *track_1
+        start_datetime:
+        end_datetime:
+        talk_title: "Container engines in High Performance Computing: alcune storie di utilizzo in CINECA"
+        talk_description: "In High Performance Computing si privilegia l’ottenimento delle massime prestazioni rispetto alla flessibilità dell’ambiente di esecuzione.
+        Perciò, già da diversi anni si sta diffondendo l’utilizzo di container engines per poter indirizzare workflow sempre più complessi.
+        Dopo un breve aggiornamento circa l’evoluzione e lo stato dell'arte nell’utilizzo dei container in ambito HPC, verranno presentati quattro casi d'uso attualmente in produzione in CINECA, tre realizzati mediante 'Singularity' e uno mediante 'Podman'.
+        Più nel dettaglio, 'Singularity' sarà presentato come container engine per l'esecuzione di 'Alphafold', di 'Flac3d' in ambiente CentOS/RedHat e del clients iRODS su server PowerPC.
+        Il primo applicativo viene distribuito solo come immagine containerizzata e viene utilizzato in ambito bioinformatico per la predizione della struttura 3D delle proteine, il secondo viene distribuito unicamente per ambiente Debian ed è utilizzato per la modellizzazione di strutture solide continue, mentre il terzo è un client disponibile solo per architetture x86_64 per l’utilizzo del software di data management open source iRODS.
+        Infine, dato che all’interno della sua istanza GitLab CINECA fornisce un servizio di continuous integration in esecuzione su alcuni server dedicati dei sistemi HPC, sarà presentato il caso d’uso in cui i container fungono da ambiente di esecuzione (runner) per i job delle pipeline di continuous integration.
+        Come container engine sarà mostrato l’utilizzo di 'Podman' che permette di eseguire pipeline CI GitLab su architetture PowerPC in modo sicuro."
+        talk_video_url:
+        speakers:
+          speaker_1: *marco
+      jason:
+        item_type: "talk"
+        track: *track_1
+        start_datetime:
+        end_datetime:
+        talk_title: "Falco alla Conquista della Cloud Security"
+        talk_description: "Col crescere in complessità del cloud moderno, la sicurezza basata sull'osservazione dei container diventa sempre meno efficace.
+        Nuove soluzioni consistono nel collezionare e ispezionare gli activity logs dei servizi cloud, richiedendo molto spazio di archiviazione e offrendo scarsa visibilità in tempo reale.
+        Falco, lo strumento Cloud Native storicamente noto per la Runtime Security nell'ambito dei container, si sta espandendo per portare telemetria in tempo reale anche sui cloud logs con miglior efficacia e a minor costo.
+        Questa sessione presenterà Falco come nuova alternativa alla Cloud Security per proteggere i tuoi servizi e infrastrutture cloud, tutto con un unico strumento e con la potenza dell'Open Source."
+        talk_video_url:
+        speakers:
+          speaker_1: *jason
+#          speaker_2: *michele
+      giorgia:
+        item_type: "talk"
+        track: *track_1
+        start_datetime:
+        end_datetime:
+        talk_title: "Kustomize vs Helm - Civil War"
+        talk_description: "Kubernetes offre nativamente tutti gli strumenti necessari per gestire i deployment delle nostre applicazioni.
+        Tuttavia, man mano che le infrastrutture a microservizi crescono in complessità, le risorse da mantenere aumentano, e la gestione delle configurazioni YAML diventa sempre più complessa.
+        Ed è proprio qui che entrano in gioco due tool a nostro supporto. Da un lato abbiamo Helm, il popolare package manager per Kubernetes; dall’altro Kustomize, il configuration manager che ci aiuta a deployare e personalizzare le nostre risorse.
+        Entrambi ci aiutano a semplificare la gestione dei deployment, ma con due approcci molto diversi. Quale sarà il migliore per la tua applicazione?"
+        talk_video_url:
+        speakers:
+          speaker_1: *giorgia
+      jacopo:
+        item_type: "talk"
+        track: *track_1
+        start_datetime:
+        end_datetime:
+        talk_title: "Tales of the mythical Cloud-Native Platform (AKA how Kubernetes won’t fix your broken organization - and what you can do about it)"
+        talk_description: "Il 2021 e il 2022 sembrano essere stati gli anni in cui il management ha scoperto i concetti di DevOps e 'Platform Teams'.
+        In questo momento, praticamente ogni azienda italiana sta costruendo la propria versione di un modello operativo platform-based (se stai leggendo questo abstract, è probabile che in questo momento ne stia costruendo una anche tu), in cui  Kubernetes interpreta il ruolo della persona popolare della città, di cui tutti i grandi vendor parlano.
+        In questo talk - dopo 5 anni passati a parlare con chi dirige e progetta, portando Kubernetes in produzione in ambienti mission-critical tutti i tipi (dalle banche ai sistemi di pagamento, dalla difesa ai partiti politici) - porterò la mia esperienza diretta data dall’interazione con diverse società, team e mercati per parlare del vero ruolo giocato da DevOps, Kubernetes e tecnologie Cloud-Native, spiegando come probabilmente non rispondano esattamente a quello che comunemente si crede e cosa sia possibile fare al riguardo."
+        talk_video_url:
+        speakers:
+          speaker_1: *jacopo
+      massimo:
+        item_type: "talk"
+        track: *track_1
+        start_datetime:
+        end_datetime:
+        talk_title: "WebAssembly 'on the server'"
+        talk_description: "WebAssembly (WASM in breve) è un formato di istruzioni binarie basato su una macchina virtuale 'stack-based' originariamente pensato per il browser.
+        Recentemente, ci sono state molte discussioni sulla possibilità di espandere e applicare le potenzialità e il valore di WASM 'fuori dal browser' ed in particolare 'sul server'.
+        Molte persone pensano che WASM possa essere la prossima ondata di innovazione nelle astrazioni di cloud computing. Ma come si relaziona alle esistenti e largamente usate astrazioni quali VM, containers e serverless? WASM le rimpiazza o le complementa?
+        In questa sessione introduttiva cercheremo di rispondere ad alcune di queste domande lasciando l’audience con alcuni spunti di riflessione"
+        talk_video_url:
+        speakers:
+          speaker_1: *massimo
+      gabriele:
+        item_type: "talk"
+        track: *track_1
+        start_datetime:
+        end_datetime:
+        talk_title: "Containers da zero! Una panoramica di cgroup e name-spaces"
+        talk_description: "AAA talk per nerd!!! Beh sì i containers funzionano come i cgruop ed in name-spaces.
+        Quante volte lo abbiamo sentito? L'idea di questo talk è cercare di capire come funzionano i container a basso livello in linux creando un container a partire da zero."
+        talk_video_url:
+        speakers:
+          speaker_1: *gabriele
+      serena:
+        item_type: "talk"
+        track: *track_1
+        start_datetime:
+        end_datetime:
+        talk_title: "(Open)Shift your application"
+        talk_description: "K8S ha rappresentato e rappresenta uno strumento molto potente per il deploy di un'applicazione con relativi microservizi in ambienti di produzione.
+        Grazie ad OpenShift vengono però introdotte diverse modalità di deploy, tra cui i template: come sfruttare un semplice file YAML (o JSON) per poter descrivere e migrare la propria applicazione?
+        Con questo talk hands-on vediamo una semplice 'ricetta' su come impacchettare la propria soluzione a partire da un'immagine Docker e definire un template che ci permetta di effettuare il deploy su OpenShift in un batter d'occhio!"
+        talk_video_url:
+        speakers:
+          speaker_1: *serena
+      # titolotalk1:
+      #   item_type: "talk"
+      #   track: *track_1
+      #   start_datetime:
+      #   end_datetime:
+      #   talk_title: ""
+      #   talk_description: ""
+      #   talk_video_url:
+      #   speakers:
+      #     speaker_1: *speaker
