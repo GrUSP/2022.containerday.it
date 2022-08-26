@@ -202,7 +202,7 @@ workshops:
     language: "italiano"
     # language_ext: "Lingua: italiano"
     language_additional_info: ""
-    collab: "Workshop realizzato in collaborazione con XPeppers"
+    collab: "Workshop realizzato in collaborazione con Claranet"
     # description: "<i>sottotitolo o altra riga di descrizione sintetica</i>"
     description_long:     "Il workshop è rivolto a data scientist e machine learning engineer che vogliono approfondire il funzionamento di Amazon SageMaker ed i principi MLOps.
     <br><br  />
