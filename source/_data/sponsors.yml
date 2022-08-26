@@ -6,6 +6,10 @@ sponsors_block_title: "Grazie al supporto di"
 #    site_url: ""
 diamond:
   sponsor1:
+    name: "OVHcloud"
+    logo_filename: "ovh.png"
+    site_url: "https://www.ovhcloud.com/it/"
+  sponsor2:
     name: "SIGHUP"
     logo_filename: "sighup.png"
     site_url: "https://sighup.io/"

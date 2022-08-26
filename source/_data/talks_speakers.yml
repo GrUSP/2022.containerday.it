@@ -19,7 +19,7 @@ speaker_2: &marco
   speaker_name: Marco De Pascale
   speaker_pic_filename: marco-depascale.png
   speaker_role: "HPC Specialist @ CINECA"
-  speaker_bio: "I own a PhD in Astronomy and 10 years experience as C++ software engineer ranging from data science and machine learning, acquired during PhD, to control software development and design for multimillion Euro instruments, gained during Post Doc contracts, and to high performance computing (HPC) applications, acquired at the Italian HPC center CINECA. Since the last year I am responsible on the software side of the continuous integration infrastructure on CINECA GitLab instance."
+  speaker_bio: "PhD in Astronomia e 10 anni di esperienza in nello sviluppo di software: da applicazioni basate su data science e machine learning, a design e sviluppo di software di controllo per strumenti per la ricerca astronomica del valore di molti milioni di Euro, ad applicaziopni di high performance computing per la ricerca farmaceutica. Dall'ultimo anno responsabile della parte software per la infrastruttura di continuous integration sull'istanza CINECA di GitLab."
   is_mc: false
 speaker_3: &jason
   speaker_in_speaker_lists: true
@@ -38,6 +38,7 @@ speaker_4: &giorgia
   speaker_bio: "Ingegnera informatica, attualmente Cloud Engineer presso Mia-Platform. Appassionata di arte e tecnologia con uno spiccato interesse verso il mondo cloud e DevOps, costantemente alla ricerca di modi creativi e fuori dagli schemi per affrontare il problem-solving quotidiano.
 (Anche se la miglior soluzione resta spegnere e riaccendere.)"
   speaker_github_url: "https://github.com/fiscafusca"
+  speaker_twitter_url: "https://twitter.com/feeskafoo"
   is_mc: false
 speaker_5: &jacopo
   speaker_in_speaker_lists: true
@@ -80,28 +81,23 @@ speaker_8: &serena
 #   speaker_pic_filename: michele-zuccala.png
 #   speaker_role: "Director of Open Source Engineering @ Sysdig"
 #   speaker_bio: "Michele si è unito a Sysdig ad aprile 2021 e da allora è a guida del team di Open Source Engineering. Il punto focale del suo team è Falco, il de facto standard per cloud-native runtime security, attualmente incubato da CNCF. Prima di entrare in Sysdig, Michele è stato CTO in ProntoPro, una scale-up italiana di rilievo. Lo appassiona profondamente contribuire alla comunità tecnologica globale fornendo consulenze e investendo in early-stage startups, oltre a dare un contributo significativo a progetti open source. Nel tempo libero Michele ama navigare, fare immersione subacquea, e sciare."
-#   speaker_github_url: "https://github.com/"
-#   speaker_twitter_url: "https://twitter.com/"
+#   speaker_twitter_url: "https://twitter.com/zuc"
 #   is_mc: false
-# speaker_: &nome
-#   speaker_in_speaker_lists: true
-#   speaker_name:
-#   speaker_pic_filename: .jpg
-#   speaker_role: ""
-#   speaker_bio: ""
-#   speaker_github_url: "https://github.com/"
-#   speaker_twitter_url: "https://twitter.com/"
-#   is_mc: false
-# speaker_: &nome
-#   speaker_in_speaker_lists: true
-#   speaker_name:
-#   speaker_pic_filename: .jpg
-#   speaker_role: ""
-#   speaker_bio: ""
-#   speaker_github_url: "https://github.com/"
-#   speaker_twitter_url: "https://twitter.com/"
-#   is_mc: false
-speaker_11: &fabiomora
+speaker_10: &francesco
+  speaker_in_speaker_lists: true
+  speaker_name: Francesco Cola
+  speaker_pic_filename: francesco-cola.png
+  speaker_role: "HPC User Support @ CINECA"
+  speaker_bio: "Sono laureato in matematica e un master in calcolo scientifico. Prima di lavorare per il CINECA nel dipartimento HPC ho insegnato matematica alle scuole superiori. Ora mi occupo principalmente di supporto utenti e ambiente di produzione, in particolare mi occupo dell'installazione di software sui cluster HPC."
+  is_mc: false
+speaker_11: &horacio
+  speaker_in_speaker_lists: true
+  speaker_name: Horacio Gonzales
+  speaker_pic_filename: horacio-gonzales.png
+  speaker_role: "DevRel Leader @ OVHcloud"
+  speaker_bio: "My role as DevRel Leader is to lead the DevRel Practitioners community at OVHcloud, defining the DevRel strategy, coordinating and giving visibility to our different actions, animating the community and, of course, doing DevRel tasks."
+  is_mc: false
+speaker_12: &fabiomora
   speaker_in_speaker_lists: true
   speaker_name: Fabio Mora
   speaker_pic_filename: fabio-mora.png
@@ -111,15 +107,17 @@ speaker_11: &fabiomora
 
 speakers:
   speaker_1: *jose
-  speaker_2: *marco
-  speaker_3: *jason
-  speaker_4: *giorgia
-  speaker_5: *jacopo
-  speaker_6: *massimo
-  speaker_7: *gabriele
-  speaker_8: *serena
-#  speaker_9: *michele
-  speaker_11: *fabiomora
+  speaker_2: *francesco
+  speaker_3: *marco
+  speaker_4: *jason
+  speaker_5: *giorgia
+  speaker_6: *horacio
+  speaker_7: *jacopo
+  speaker_8: *massimo
+  speaker_9: *gabriele
+  speaker_10: *serena
+#  speaker_11: *michele
+  speaker_12: *fabiomora
 
 tracks:
   track_1: &track_1
@@ -181,7 +179,7 @@ days:
         service_icon: "glass"
 
       # talk
-      jose:
+      debugging:
         item_type: "talk"
         track: *track_1
         start_datetime:
@@ -195,7 +193,7 @@ days:
         talk_video_url:
         speakers:
           speaker_1: *jose
-      marco:
+      containers-engines:
         item_type: "talk"
         track: *track_1
         start_datetime:
@@ -211,7 +209,8 @@ days:
         talk_video_url:
         speakers:
           speaker_1: *marco
-      jason:
+          speaker_2: *francesco
+      falco:
         item_type: "talk"
         track: *track_1
         start_datetime:
@@ -225,7 +224,7 @@ days:
         speakers:
           speaker_1: *jason
 #          speaker_2: *michele
-      giorgia:
+      kustomize-helm:
         item_type: "talk"
         track: *track_1
         start_datetime:
@@ -238,7 +237,7 @@ days:
         talk_video_url:
         speakers:
           speaker_1: *giorgia
-      jacopo:
+      cloud-native-platform:
         item_type: "talk"
         track: *track_1
         start_datetime:
@@ -250,7 +249,7 @@ days:
         talk_video_url:
         speakers:
           speaker_1: *jacopo
-      massimo:
+      webassembly:
         item_type: "talk"
         track: *track_1
         start_datetime:
@@ -263,7 +262,7 @@ days:
         talk_video_url:
         speakers:
           speaker_1: *massimo
-      gabriele:
+      containers-da-zero:
         item_type: "talk"
         track: *track_1
         start_datetime:
@@ -274,7 +273,7 @@ days:
         talk_video_url:
         speakers:
           speaker_1: *gabriele
-      serena:
+      open_shift:
         item_type: "talk"
         track: *track_1
         start_datetime:
@@ -286,13 +285,13 @@ days:
         talk_video_url:
         speakers:
           speaker_1: *serena
-      # titolotalk1:
-      #   item_type: "talk"
-      #   track: *track_1
-      #   start_datetime:
-      #   end_datetime:
-      #   talk_title: ""
-      #   talk_description: ""
-      #   talk_video_url:
-      #   speakers:
-      #     speaker_1: *speaker
+      kubernetes_operator:
+        item_type: "talk"
+        track: *track_1
+        start_datetime:
+        end_datetime:
+        talk_title: "Let's dive into Kubernetes operator creation"
+        talk_description: "<i>[Talk in english language]</i> Operators are extensions to Kubernetes that simplify application install and management by leveraging on manage applications Custom Resources. The Kubernetes Operator pattern tries to emulate the role of a human operator, who uses their deep knowledge of the application to install, operate and debug it. The Kubernetes Operators search to automate these tasks and facilitate the whole application life cycle. In this talk, Aurélie and Horacio will explain to you how to create a simple Kubernetes operator in Go."
+        talk_video_url:
+        speakers:
+          speaker_1: *horacio
