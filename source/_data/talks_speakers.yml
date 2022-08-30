@@ -75,14 +75,14 @@ speaker_8: &serena
   speaker_github_url: "https://github.com/serenasensini"
   speaker_twitter_url: "https://twitter.com/s_sensini"
   is_mc: false
-# speaker_9: &michele
-#   speaker_in_speaker_lists: true
-#   speaker_name: Michele Zuccala
-#   speaker_pic_filename: michele-zuccala.png
-#   speaker_role: "Director of Open Source Engineering @ Sysdig"
-#   speaker_bio: "Michele si è unito a Sysdig ad aprile 2021 e da allora è a guida del team di Open Source Engineering. Il punto focale del suo team è Falco, il de facto standard per cloud-native runtime security, attualmente incubato da CNCF. Prima di entrare in Sysdig, Michele è stato CTO in ProntoPro, una scale-up italiana di rilievo. Lo appassiona profondamente contribuire alla comunità tecnologica globale fornendo consulenze e investendo in early-stage startups, oltre a dare un contributo significativo a progetti open source. Nel tempo libero Michele ama navigare, fare immersione subacquea, e sciare."
-#   speaker_twitter_url: "https://twitter.com/zuc"
-#   is_mc: false
+speaker_9: &michele
+  speaker_in_speaker_lists: true
+  speaker_name: Michele Zuccala
+  speaker_pic_filename: michele-zuccala.png
+  speaker_role: "Director of Open Source Engineering @ Sysdig"
+  speaker_bio: "Michele si è unito a Sysdig ad aprile 2021 e da allora è a guida del team di Open Source Engineering. Il punto focale del suo team è Falco, il de facto standard per cloud-native runtime security, attualmente incubato da CNCF. Prima di entrare in Sysdig, Michele è stato CTO in ProntoPro, una scale-up italiana di rilievo. Lo appassiona profondamente contribuire alla comunità tecnologica globale fornendo consulenze e investendo in early-stage startups, oltre a dare un contributo significativo a progetti open source. Nel tempo libero Michele ama navigare, fare immersione subacquea, e sciare."
+  speaker_twitter_url: "https://twitter.com/zuc"
+  is_mc: false
 speaker_10: &francesco
   speaker_in_speaker_lists: true
   speaker_name: Francesco Cola
@@ -116,7 +116,7 @@ speakers:
   speaker_8: *massimo
   speaker_9: *gabriele
   speaker_10: *serena
-#  speaker_11: *michele
+  speaker_11: *michele
   speaker_12: *fabiomora
 
 tracks:
@@ -223,7 +223,7 @@ days:
         talk_video_url:
         speakers:
           speaker_1: *jason
-#          speaker_2: *michele
+          speaker_2: *michele
       kustomize-helm:
         item_type: "talk"
         track: *track_1
