@@ -49,11 +49,10 @@ bronze:
     name: "stickermule"
     logo_filename: "stickermule.svg"
     site_url: "https://mule.to/p2gc"
-#media:
-#  sponsor1:
-#    name: ""
-#    logo_filename: ""
-#    site_url: ""
+  sponsor3:
+    name: "sysdig"
+    logo_filename: "sysdig.svg"
+    site_url: "https://sysdig.com/"
 
 # Partner configuration
 partner_tags:
