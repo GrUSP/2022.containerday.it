@@ -46,10 +46,14 @@ bronze:
     logo_filename: "aws.svg"
     site_url: "https://aws.amazon.com/it/local/italy/"
   sponsor2:
+    name: "extera"
+    logo_filename: "extera.png"
+    site_url: "https://www.extera.com/"
+  sponsor3:
     name: "stickermule"
     logo_filename: "stickermule.svg"
     site_url: "https://mule.to/p2gc"
-  sponsor3:
+  sponsor4:
     name: "sysdig"
     logo_filename: "sysdig.svg"
     site_url: "https://sysdig.com/"
