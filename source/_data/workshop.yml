@@ -125,12 +125,12 @@ workshops:
     trailer: false
     trailer_url: ""
     # nota sul titolo: se il linguaggio specificato in `language` NON in clude 'italian', in pagina viene aggiunta la "s" finale
-    teacher_title: "A cura di"
+    teacher_title: "Docente"
     teachers:
       teacher_1:
-        teacher_name: "SIGHUP"
-        teacher_bio: "SIGHUP è focalizzata nell’automazione di infrastrutture IT su tecnologie Cloud Native Open Source."
-        pic_filename: sighup.png
+        teacher_name: "Giuseppe Rotella"
+        teacher_bio: "Atlassian Certified Expert e Devops Engineer con esperienza nella progettazione, configurazione e distribuzione di soluzioni Atlassian e Devops. Amante della tecnologia e delle innovazioni, a cui piace confrontarsi e condividere le informazioni quotidianamente. Affascinato dall’evoluzione del mondo DevOps e dal progresso tecnologico."
+        pic_filename: giuseppe-rotella.jpeg
         teacher_role: "DevOps Engineer"
         teacher_org: "SIGHUP"
     topics_title: "Programma"
