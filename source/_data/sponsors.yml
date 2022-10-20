@@ -8,7 +8,7 @@ diamond:
   sponsor1:
     name: "OVHcloud"
     logo_filename: "ovh.png"
-    site_url: "https://www.ovhcloud.com/it/"
+    site_url: "https://www.ovhcloud.com/en/public-cloud/kubernetes/"
   sponsor2:
     name: "SIGHUP"
     logo_filename: "sighup.png"
