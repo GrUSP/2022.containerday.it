@@ -21,15 +21,6 @@ speaker_2: &marco
   speaker_role: "HPC Specialist @ CINECA"
   speaker_bio: "PhD in Astronomia e 10 anni di esperienza in nello sviluppo di software: da applicazioni basate su data science e machine learning, a design e sviluppo di software di controllo per strumenti per la ricerca astronomica del valore di molti milioni di Euro, ad applicaziopni di high performance computing per la ricerca farmaceutica. Dall'ultimo anno responsabile della parte software per la infrastruttura di continuous integration sull'istanza CINECA di GitLab."
   is_mc: false
-speaker_3: &jason
-  speaker_in_speaker_lists: true
-  speaker_name: Jason	Dellaluce
-  speaker_pic_filename: jason-dellaluce.png
-  speaker_role: "Open Source Engineer @ Sysdig"
-  speaker_bio: "Jason Dellaluce è attualmente Open Source Engineer a Sysdig e Core Maintainer di Falco, il tool per la Cloud Native Runtime Security incubato da CNCF. Contribuisce regolarmente alla community di Falco ed è esposto a Linux, Kubernetes, Container, Sicurezza, eBPF, e al mondo dell'Open Source in generale. Recentemente, ha contribuito a Falco assumendo un ruolo chiave nello sviluppo del nuovo Plugin System, supportando le ultime version release, e guidando diverse iniziative di rinnovamento ed ottimizzazione. Precedentemente, Jason ha conseguito un MSc in Computer Engineering studiando a Università di Bologna e a University of California, Irvine."
-  speaker_github_url: "https://github.com/jasondellaluce"
-  speaker_twitter_url: "https://twitter.com/jasondellaluce"
-  is_mc: false
 speaker_4: &giorgia
   speaker_in_speaker_lists: true
   speaker_name: Giorgia	Fiscaletti
@@ -109,7 +100,6 @@ speakers:
   speaker_1: *jose
   speaker_2: *francesco
   speaker_3: *marco
-  speaker_4: *jason
   speaker_5: *giorgia
   speaker_6: *horacio
   speaker_7: *jacopo
@@ -293,6 +283,5 @@ days:
         Questa sessione presenterà Falco come nuova alternativa alla Cloud Security per proteggere i tuoi servizi e infrastrutture cloud, tutto con un unico strumento e con la potenza dell'Open Source."
         talk_video_url:
         speakers:
-          speaker_1: *jason
-          speaker_2: *michele
+          speaker_1: *michele
 
