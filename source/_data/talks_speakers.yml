@@ -5,15 +5,6 @@ schedule_under_construction_description: "We are still defining the schedule. Pl
 social_lineup_image: "social-lineup-1200x630.png"
 
 # Speakers. I mixin "&nome" servono per indicare quali speaker partecipano a ogni talk, sotto
-speaker_1: &jose
-  speaker_in_speaker_lists: true
-  speaker_name: Jose Blanquicet
-  speaker_pic_filename: jose-blanquicet.png
-  speaker_role: "Senior Software Engineer @ Microsoft"
-  speaker_bio: "Jose è un Senior Software Engineer focalizzato sulle tecnologie di Kubernetes ed eBPF. Attualmente lavora come maintainer e sviluppatore di Inspektor Gadget, un progetto open source del team Kinvolk @ Microsoft."
-  speaker_github_url: "https://github.com/blanquicet"
-  speaker_twitter_url: "https://twitter.com/jose_blanquicet"
-  is_mc: false
 speaker_2: &marco
   speaker_in_speaker_lists: true
   speaker_name: Marco De Pascale
@@ -97,7 +88,6 @@ speaker_12: &fabiomora
   is_mc: true
 
 speakers:
-  speaker_1: *jose
   speaker_2: *francesco
   speaker_3: *marco
   speaker_5: *giorgia
@@ -151,20 +141,20 @@ days:
         service_icon: "coffee"
       coffee-afternoon:
         item_type: "service"
-        start_datetime: 2022-10-28T16:10+02:00
-        end_datetime: 2022-10-28T16:40+02:00
+        start_datetime: 2022-10-28T15:40+02:00
+        end_datetime: 2022-10-28T16:10+02:00
         talk_title: "Pausa Caffé"
         service_icon: "coffee"
       lunch:
         item_type: "service"
-        start_datetime: 2022-10-28T13:20+02:00
-        end_datetime: 2022-10-28T14:50+02:00
+        start_datetime: 2022-10-28T12:40+02:00
+        end_datetime: 2022-10-28T14:20+02:00
         talk_title: "Pausa pranzo"
         service_icon: "cutlery"
       closing:
         item_type: "service"
-        start_datetime: 2022-10-28T18:00+02:00
-        end_datetime: 2022-10-28T18:10+02:00
+        start_datetime: 2022-10-28T17:30+02:00
+        end_datetime: 2022-10-28T17:40+02:00
         talk_title: "Saluti da GrUSP"
 
 
@@ -202,25 +192,11 @@ days:
         talk_video_url:
         speakers:
           speaker_1: *gabriele
-      debugging:
+      containers-engines:
         item_type: "talk"
         track: *track_1
         start_datetime: 2022-10-28T12:00+02:00
         end_datetime: 2022-10-28T12:40+02:00
-        talk_title: "Debugging and Observing Containers Like a Pro"
-        talk_description: "È difficile fare debugging dei container utilizzando i tool standard Linux (ad es. top, tcpdump, ss/netstat) o i tool basati su eBPF (ad es. <a href='https://github.com/kinvolk/bcc/'>BCC</a>) perché tutti loro funzionano a livello di processo e non hanno conoscenza dei namespace di Linux.
-        Per questo motivo, gli utenti si vedono obbligati a dover interpretare l'output di questi tool per correlarlo con il container che si sta debuggando e, in alcuni casi, saltare manualmente tra i namespace di Linux per eseguire i tool nel contesto corretto.
-        Questo processo è complesso e richiede una comprensione approfondita del back-end della tecnologia dei container e, in generale, dei namespace di Linux.
-        Questo è il motivo per cui abbiamo creato <a href='https://github.com/kinvolk/inspektor-gadget'>Local-Gadget</a>, un progetto open source basato su eBPF per il debugging e l'observability dei container che nasconde la complessità di basso livello agli utenti finali.
-        In questo talk, Jose dimostrerà alcune delle difficoltà di fare debugging dei container con dei tool che lavorano a livello di processo. Dopodiché, introdurrà Local-Gadget e spiegherà come sono state superate queste difficoltà per consentire agli utenti di tracciare facilmente eventi come la creazione di nuovi processi, l'accesso ai file, l'attività di rete e del disco dei container."
-        talk_video_url:
-        speakers:
-          speaker_1: *jose
-      containers-engines:
-        item_type: "talk"
-        track: *track_1
-        start_datetime: 2022-10-28T12:40+02:00
-        end_datetime: 2022-10-28T13:20+02:00
         talk_title: "Container engines in High Performance Computing: alcune storie di utilizzo in CINECA"
         talk_description: "In High Performance Computing si privilegia l’ottenimento delle massime prestazioni rispetto alla flessibilità dell’ambiente di esecuzione.
         Perciò, già da diversi anni si sta diffondendo l’utilizzo di container engines per poter indirizzare workflow sempre più complessi.
@@ -236,8 +212,8 @@ days:
       kustomize-helm:
         item_type: "talk"
         track: *track_1
-        start_datetime: 2022-10-28T14:50+02:00
-        end_datetime: 2022-10-28T15:30+02:00
+        start_datetime: 2022-10-28T14:20+02:00
+        end_datetime: 2022-10-28T15:00+02:00
         talk_title: "Kustomize vs Helm - Civil War"
         talk_description: "Kubernetes offre nativamente tutti gli strumenti necessari per gestire i deployment delle nostre applicazioni.
         Tuttavia, man mano che le infrastrutture a microservizi crescono in complessità, le risorse da mantenere aumentano, e la gestione delle configurazioni YAML diventa sempre più complessa.
@@ -249,8 +225,8 @@ days:
       open_shift:
         item_type: "talk"
         track: *track_1
-        start_datetime: 2022-10-28T15:30+02:00
-        end_datetime: 2022-10-28T16:10+02:00
+        start_datetime: 2022-10-28T15:00+02:00
+        end_datetime: 2022-10-28T15:40+02:00
         talk_title: "(Open)Shift your application"
         talk_description: "K8S ha rappresentato e rappresenta uno strumento molto potente per il deploy di un'applicazione con relativi microservizi in ambienti di produzione.
         Grazie ad OpenShift vengono però introdotte diverse modalità di deploy, tra cui i template: come sfruttare un semplice file YAML (o JSON) per poter descrivere e migrare la propria applicazione?
@@ -261,8 +237,8 @@ days:
       webassembly:
         item_type: "talk"
         track: *track_1
-        start_datetime: 2022-10-28T16:40+02:00
-        end_datetime: 2022-10-28T17:20+02:00
+        start_datetime: 2022-10-28T16:10+02:00
+        end_datetime: 2022-10-28T16:50+02:00
         talk_title: "WebAssembly 'on the server'"
         talk_description: "WebAssembly (WASM in breve) è un formato di istruzioni binarie basato su una macchina virtuale 'stack-based' originariamente pensato per il browser.
         Recentemente, ci sono state molte discussioni sulla possibilità di espandere e applicare le potenzialità e il valore di WASM 'fuori dal browser' ed in particolare 'sul server'.
@@ -274,8 +250,8 @@ days:
       falco:
         item_type: "talk"
         track: *track_1
-        start_datetime: 2022-10-28T17:20+02:00
-        end_datetime: 2022-10-28T18:00+02:00
+        start_datetime: 2022-10-28T16:50+02:00
+        end_datetime: 2022-10-28T17:30+02:00
         talk_title: "Falco alla Conquista della Cloud Security"
         talk_description: "Col crescere in complessità del cloud moderno, la sicurezza basata sull'osservazione dei container diventa sempre meno efficace.
         Nuove soluzioni consistono nel collezionare e ispezionare gli activity logs dei servizi cloud, richiedendo molto spazio di archiviazione e offrendo scarsa visibilità in tempo reale.
