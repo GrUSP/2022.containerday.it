@@ -51,7 +51,7 @@ bronze:
     site_url: "https://www.cineca.it"
   sponsor3:
     name: "extera"
-    logo_filename: "extera.png"
+    logo_filename: "extera.svg"
     site_url: "https://www.extera.com/"
   sponsor4:
     name: "stickermule"
